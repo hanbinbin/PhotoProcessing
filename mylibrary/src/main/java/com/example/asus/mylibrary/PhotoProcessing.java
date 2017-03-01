@@ -23,7 +23,7 @@ import android.graphics.Bitmap.Config;
 /**
  * PhotoProcessing
  *
- * @author Nilesh Patel
+ * @author HanBinBin
  */
 public class PhotoProcessing {
     /**
@@ -31,21 +31,6 @@ public class PhotoProcessing {
      */
     @SuppressWarnings("unused")
     private static final String TAG = "PhotoProcessing";
-
-//    public static final int[] FILTERS = {R.string.filter_original,
-//            R.string.filter_instafix,
-//            R.string.filter_ansel,
-//            R.string.filter_testino,
-//            R.string.filter_xpro,
-//            R.string.filter_retro,
-//            R.string.filter_bw,
-//            R.string.filter_sepia,
-//            R.string.filter_cyano,
-//            R.string.filter_georgia,
-//            R.string.filter_sahara,
-//            R.string.filter_hdr};
-//
-//    public static final int[] EDIT_ACTIONS = {R.string.edit_action_flip, R.string.edit_action_rotate_90_right, R.string.edit_action_rotate_90_left, R.string.edit_action_rotate_180};
 
     public static Bitmap filterPhoto(Bitmap bitmap, int position) {
         if (bitmap != null) { //USe current bitmap in native memory
@@ -112,8 +97,6 @@ public class PhotoProcessing {
         return bitmap;
     }
 
-
-    ///////////////////////////////////////////////
 
     static {
         System.loadLibrary("photoprocessing");
