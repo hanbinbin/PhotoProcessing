@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "1.0.0"
+version = "1.0.0"  // Maven 上library的版本号
 android {
     compileSdkVersion 21
     buildToolsVersion "25.0.0"
@@ -87,7 +87,7 @@ bintray {
     key = properties.getProperty("bintray.apikey")
     configurations = ['archives']
     pkg {
-        repo = "maven"
+        repo = "maven"               //Bintray的仓库名
         name = "photoprocessing"    //发布到Bintray上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
