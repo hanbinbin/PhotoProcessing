@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "1.0.0"  // Maven 上library的版本号
+version = "1.0.0"  // Maven上library的版本号
 android {
     compileSdkVersion 21
     buildToolsVersion "25.0.0"
@@ -19,7 +19,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    //忽略错误信息
+    //忽略错误信息(编译的时候)
     lintOptions {
         abortOnError false
     }

@@ -163,7 +163,7 @@ public class PhotoProcessing {
 
     public static native void nativeResizeBitmap(int newWidth, int newHeight);
 
-    private static void sendBitmapToNative(Bitmap bitmap) {
+    public static void sendBitmapToNative(Bitmap bitmap) {
         int width = bitmap.getWidth();
         int height = bitmap.getHeight();
         nativeInitBitmap(width, height);
@@ -174,7 +174,7 @@ public class PhotoProcessing {
         }
     }
 
-    private static Bitmap getBitmapFromNative(Bitmap bitmap) {
+    public static Bitmap getBitmapFromNative(Bitmap bitmap) {
         int width = nativeGetBitmapWidth();
         int height = nativeGetBitmapHeight();
 
